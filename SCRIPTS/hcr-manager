@@ -27,8 +27,8 @@ opt_line() {
     echo -e " ${OPT_BRACKET}[${OPT_NUM}${num}${OPT_BRACKET}]${OPT_ARROW} >${OPT_TEXT} ${text}${NC}"
 }
 
-TTini='=====>>►► 🐼'
-TTfin='🐼 ◄◄<<====='
+TTini='=====>>►► 🌐'
+TTfin='🌐 ◄◄<<====='
 BAR_WIDTH=43
 BARC='\033[0;34m'
 draw_bar() { echo -e "${BARC}$(printf '%.0s━' $(seq 1 "${BAR_WIDTH}"))${NC}"; }
