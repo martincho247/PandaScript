@@ -27,7 +27,7 @@ os_system() {
  Debian)vercion=$(echo $system|awk '{print $3}'|cut -d '.' -f1);;
  Ubuntu)vercion=$(echo $system|awk '{print $2}'|cut -d '.' -f1,2);;
  esac
- link="https://raw.githubusercontent.com/karl1999x/PandaScript/main/Source-List/${vercion}.list"
+ link="https://raw.githubusercontent.com/martincho247/PandaScript/main/Source-List/${vercion}.list"
 }
 
 if ! [ $(id -u) = 0 ]; then
