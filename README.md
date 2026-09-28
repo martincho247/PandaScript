@@ -9,7 +9,7 @@
  apt update -y; apt upgrade -y; wget --inet4-only https://raw.githubusercontent.com/karl1999x/PandaScript/refs/heads/main/PandaScript/setup -O setup; chmod 755 setup; ./setup
 
 
-# **<font color="#FF4500">🐼 PandaScript 🐼</font>** ## **<font color="#1E90FF">MG SCRIPT</font>** 😉 
+# **<font color="#FF4500">🌐 MG SCRIPTS 🌐</font>** ## **<font color="#1E90FF">MG SCRIPT</font>** 😉 
 [https://t.me/PandaHL001](https://t.me/PandaHL001)
 
 <p dir="auto">
