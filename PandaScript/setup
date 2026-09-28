@@ -114,7 +114,7 @@ invalid_key () {
 funkey () {
     clear&&clear
     msg -bar3
-    echo -e "\e[5m\e[1;37m\e[48;5;235m      =====>> ►►  🐼 PandaScript 🐼  ◄◄ <<=====   \e[0m"
+    echo -e "\e[5m\e[1;37m\e[48;5;235m      =====>> ►►  🌐 MgScript 🌐  ◄◄ <<=====   \e[0m"
     msg -bar3
     msg -bar
     echo -e "\033[1;33m   DESCARGANDO E INSTALANDO PandaScript DESDE GITHUB ..."
