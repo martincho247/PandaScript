@@ -3532,8 +3532,8 @@ menu_bannCheck
 # Colores y Variables de PandaScript
 COLOR_VIOLETA='\033[38;5;129m'  
 RESET='\033[0m' 
-TTini='=====>>►► 🐼'
-TTfin='🐼 ◄◄<<=====     '
+TTini='=====>>►► 🌐'
+TTfin='🌐 ◄◄<<=====     '
 LOG_ERROR="/root/error_install.log"
 
 # Importación de función msg para compatibilidad con PandaScript
