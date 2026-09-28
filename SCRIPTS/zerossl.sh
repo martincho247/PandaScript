@@ -331,7 +331,7 @@ stunel="\e[32m[ ON ]"
 else 
 stunel="\e[31m[ OFF ]" 
 fi 
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New MgScript💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar3
 msg -bar3 
 msg -tit 
