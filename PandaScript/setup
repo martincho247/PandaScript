@@ -7,7 +7,7 @@ fecha=`date +"%d-%m-%y"`;
 SCPdir="/etc/adm-lite"
 SCPinstal="$HOME/install"
 # Repositorio GitHub del proyecto
-GITHUB_RAW="https://raw.githubusercontent.com/karl1999x/PandaScript/main/PandaScript"
+GITHUB_RAW="https://raw.githubusercontent.com/martincho247/PandaScript/main/PandaScript"
 
 rm -f instala.*
 [[ -e /etc/folteto ]] && rm -f /etc/folteto
