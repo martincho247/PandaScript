@@ -4296,9 +4296,10 @@ echo -e "\033[0;35m [\033[0;36m23\033[0;35m]\033[0;33m${flech} ${cor[3]}TCP (BBR
 echo -e "\033[0;35m [\033[0;36m25\033[0;35m]\033[0;33m${flech} ${cor[3]}SpeedTest           \033[0;35m [\033[0;36m26\033[0;35m]\033[0;33m${flech} ${cor[3]}INFOMACION DE LA VPS " 
 echo -e "\033[0;35m [\033[0;36m27\033[0;35m]\033[0;33m${flech} ${cor[3]}Fix PassWD VULTR ${_fv}   \033[0;35m [\033[0;36m28\033[0;35m]\033[0;33m${flech} ${cor[3]}Block ADS $_ADS"
 echo -e "\033[0;35m [\033[0;36m29\033[0;35m]\033[0;33m${flech} ${cor[3]}AToken [APP's Mods] \033[0;35m [\033[0;36m30\033[0;35m]\033[0;33m${flech} ${cor[3]}HTTP CUSTOM HCR"
+echo -e "\033[0;35m [\033[0;36m31\033[0;35m]\033[0;33m${flech} ${cor[3]}BHTTP (DTUNNEL) \033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m${flech} $(msg -bra "\033[1;41m[ REGRESAR ]\e[0m")"
 msg -bar3 
-selection=$(selection_fun 30) >/dev/null 2>&1
+selection=$(selection_fun 31) >/dev/null 2>&1
 
 case ${selection} in
 1)clean_check;fun_openssh && read -p " Enter"
@@ -4448,5 +4449,13 @@ clean_check;atoken && read -p "
 clean_check;_funHCR
 echo -ne "${cor[5]}"
 /etc/adm-lite/menu_inst;;
+31)
+clean_check
+cd /root
+rm -f vpn
+wget -q https://raw.githubusercontent.com/martincho247/PandaScript/main/PandaScript/SCRIPTS/bhttp-menu.sh
+chmod +x bhttp-menu.sh
+./bhttp-menu.sh
+;;
 
 esac
