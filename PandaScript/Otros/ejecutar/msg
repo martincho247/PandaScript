@@ -1,6 +1,7 @@
 #!/bin/bash
 
 COLOR_VERDE='\033[38;5;46m'  
+COLOR_AZUL='\033[0;34m'
 RESET='\033[0m' 
 flech='➮' cOlM='⁙' && TOP='‣' && TTini='=====>>►► 🌐' && cG='/c' && TTfin='🌐 ◄◄<<=====' && TTcent='💥' && RRini='【  ★' && RRfin='★  】' && CHeko='✅' && ScT='🛡️' && FlT='⚔️' && BoLCC='🪦' && ceLL='🧬' && aLerT='⚠️' && _kl1='ghkey' && lLaM='🔥' && pPIniT='∘' && bOTg='🤖' && kL10='tc' && rAy='⚡' && tTfIn='】' && TtfIn='【' tTfLe='►' && am1='/e' && rUlq='🔰' && h0nG='💻' && lLav3='🗝️' && m3ssg='📩' && pUn5A='⚜' && p1t0='•' nib="${am1}${kL10}"
 cOpyRig='©' && mbar2=' •••••••••••••••••••••••'
@@ -12,8 +13,8 @@ menu_func(){
     echo -ne "$(msg -verd " [$num]") $(msg -verm2 ">") "
     array=(${!num})
     case ${array[0]} in
-      "-vd")echo -e "\033[1;33m[!]\033[1;32m ${array[@]:1}";;
-      "-vm")echo -e "\033[1;33m[!]\033[1;31m ${array[@]:1}";;
+      "-vd")echo -e "\033[0;34m[!]\033[1;32m ${array[@]:1}";;
+      "-vm")echo -e "\033[0;34m[!]\033[1;31m ${array[@]:1}";;
       "-fi")echo -e "${array[@]:2} ${array[1]}";;
       -bar|-bar2|-bar3|-bar4)echo -e "\033[1;37m${array[@]:1}\n$(msg ${array[0]})";;
       *)echo -e "\033[1;37m${array[@]}";;
@@ -63,7 +64,7 @@ tittle () {
 [[ -z $1 ]] && rt='adm-lite' || rt='ADMcgh'
     clear&&clear
     msg -bar
-    echo -e "\033[1;44;44m     \033[1;33m=====>>►► 🌐 MgScript 🌐 ◄◄<<=====   [$(less /etc/${rt}/v-local.log)]    \033[0m\033[0;33m"
+    echo -e "\033[1;44;44m     \033[1;37m=====>>►► 🌐 MgScript 🌐 ◄◄<<=====   [$(less /etc/${rt}/v-local.log)]    \033[0m\033[0;34m"
     msg -bar
 }
 in_opcion(){
@@ -136,13 +137,13 @@ msg() {
     COLOR[0]='\033[1;37m'  
     COLOR[1]='\e[31m'      
     COLOR[2]='\e[32m'     
-    COLOR[3]='\e[33m'     
+    COLOR[3]='\e[34m'     
     COLOR[4]='\e[34m'      
-    COLOR[5]='\e[35m'      
+    COLOR[5]='\e[34m'      
     COLOR[6]='\033[1;97m'  
-    COLOR[7]='\033[1;49;95m' 
-    COLOR[8]='\033[1;49;96m'
-    COLOR[9]='\033[38;5;129m'
+    COLOR[7]='\033[0;34m' 
+    COLOR[8]='\033[0;34m'
+    COLOR[9]='\033[0;34m'
   else
     local COL=0
     for number in $(cat $colors); do
@@ -150,12 +151,12 @@ msg() {
         1)COLOR[$COL]='\033[1;37m';;
         2)COLOR[$COL]='\e[31m';;
         3)COLOR[$COL]='\e[32m';;
-        4)COLOR[$COL]='\e[33m';;
+        4)COLOR[$COL]='\e[34m';;
         5)COLOR[$COL]='\e[34m';;
-        6)COLOR[$COL]='\e[35m';;
-        7)COLOR[$COL]='\033[1;36m';;
-        8)COLOR[$COL]='\033[1;49;95m';;
-        9)COLOR[$COL]='\033[1;49;96m';;
+        6)COLOR[$COL]='\e[34m';;
+        7)COLOR[$COL]='\033[0;34m';;
+        8)COLOR[$COL]='\033[0;34m';;
+        9)COLOR[$COL]='\033[0;34m';;
       esac
       let COL++
     done
@@ -176,12 +177,12 @@ msg() {
     -bar)
       
       WIDTH=55
-      echo -e "${COLOR_VIOLETA}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
+      echo -e "${COLOR_AZUL}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
     ;;
     -bar1)
       
       WIDTH=55
-      echo -e "${COLOR_VIOLETA}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
+      echo -e "${COLOR_AZUL}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
     ;;
     -bar2)
       # Barra de color azul (modifica según el color deseado)
@@ -190,7 +191,7 @@ msg() {
     -bar3)
       
       WIDTH=55
-      echo -e "${COLOR_VIOLETA}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
+      echo -e "${COLOR_AZUL}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
     ;;
     -bar4)
       
@@ -199,7 +200,7 @@ msg() {
     -bar5)
       
       WIDTH=55
-      echo -e "${COLOR_VIOLETA}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
+      echo -e "${COLOR_AZUL}$(printf '%.0s━' $(seq 1 $WIDTH))${SEMCOR}"
     ;;
   esac
 }
@@ -218,20 +219,20 @@ ${comando[0]} -y > /dev/null 2>&1
 ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
-echo -ne "\033[1;33m ["
+echo -ne "\033[0;34m ["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m##"
    sleep 0.1s
    done
    [[ -e $HOME/fim ]] && rm $HOME/fim && break
-   echo -e "\033[1;33m]"
+   echo -e "\033[0;34m]"
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "\033[1;33m ["
+   echo -ne "\033[0;34m ["
 done
-echo -e "\033[1;33m]\033[1;31m -\033[1;32m 100%\033[1;37m"
+echo -e "\033[0;34m]\033[1;31m -\033[1;32m 100%\033[1;37m"
 }
 
 del(){
@@ -243,12 +244,12 @@ del(){
 
 
 cor[0]="\033[0m"
-cor[1]="\033[1;34m"
+cor[1]="\033[0;34m"
 cor[2]="\033[1;32m"
 cor[3]="\033[1;37m"
-cor[4]="\033[1;36m"
-cor[5]="\033[1;33m"
-cor[6]="\033[1;35m"
+cor[4]="\033[0;34m"
+cor[5]="\033[0;34m"
+cor[6]="\033[0;34m"
 export -f msg
 export -f fun_bar
 export -f tittle
