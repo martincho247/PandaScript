@@ -542,7 +542,7 @@ msg -ama "      BINARIO OFICIAL DE Epro Dev Team "
 sleep 2s && tput cuu1 && tput dl1
 [[ -e ${ADM_inst}/PDirect ]] && {
 echo -e "[Unit]
-Description=WS-Epro Service by @PandaHL001
+Description=WS-Epro Service by @MgScript
 After=network.target
 StartLimitIntervalSec=0
 
@@ -565,7 +565,7 @@ listen:
   listen_port: ${porta_socket}" > ${ADM_inst}/PDirect
   
 echo -e "[Unit]
-Description=WS-Epro Service by @PandaHL001
+Description=WS-Epro Service by @MgScript
 After=network.target
 StartLimitIntervalSec=0
 
@@ -909,7 +909,7 @@ PYTHON
 chmod +x ${ADM_inst}/$1.py
 
 echo -e "[Unit]
-Description=$1 Parametizado Service by @PandaHL001
+Description=$1 Parametizado Service by @MgScript
 After=network.target
 StartLimitIntervalSec=0
 
