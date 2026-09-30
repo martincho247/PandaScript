@@ -431,7 +431,7 @@ BadVPN () {
     # Menú siempre mostrado
     clear && clear
     msg -bar3
-    msg -ama " Administrador BadVPN UDP | @PandaHL001"
+    msg -ama " Administrador BadVPN UDP | @MgScript"
     msg -bar3
     menu_func "AÑADIR 1+ PUERTO BadVPN" "$(msg -verm2 "Detener BadVPN")"
     echo -ne "$(msg -verd " [0]") $(msg -verm2 "=>>") " && msg -bra "\033[1;41m Volver "
