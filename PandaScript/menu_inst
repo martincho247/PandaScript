@@ -196,7 +196,7 @@ echo -e "==================================================\n"
 echo -e "\033[1;33mLos datos de usuarios NO han sido borrados 💡"
 echo -e "Adquiera una licencia valida con su proveedor."
 echo -e "Genera la KEY en: @PandaScriptBot 🤖"
-echo -e "Soporte Admin: @PandaHL001 📱"
+echo -e "Soporte Admin: @MgScript 📱"
 echo -e ""
 echo -e "\033[1;32m══════════════════════════════════════════════════"
 echo -e "\033[1;36mSi crees que es un error de baneo, escribe:"
@@ -343,7 +343,7 @@ function chekKEY {
     echo -e "\n\033[1;33mNo se preocupe, los datos de los usuarios NO se borran💡"
     echo -e "Instala nuevamente la script con una nueva KEY 🔑"
     echo -e "Genera la KEY en el BOT-GEN @ModV6Bot 🤖"
-    echo -e "Contacto: @PandaHL001 📱"
+    echo -e "Contacto: @MgScript 📱"
     echo -e "\n==================================================\n"
     ' > /bin/menu
 
@@ -353,7 +353,7 @@ function chekKEY {
     echo -e "\n\033[1;33mNo se preocupe, los datos de los usuarios NO se borran💡"
     echo -e "Instala nuevamente la script con una nueva KEY 🔑"
     echo -e "Genera la KEY en el BOT-GEN @ModV6Bot 🤖"
-    echo -e "Contacto: @PandaHL001 📱"
+    echo -e "Contacto: @Mgscript 📱"
     echo -e "\n==================================================\n"
     ' > /bin/cgh
 
@@ -363,7 +363,7 @@ function chekKEY {
     echo -e "\n\033[1;33mNo se preocupe, los datos de los usuarios NO se borran💡"
     echo -e "Instala nuevamente la script con una nueva KEY 🔑"
     echo -e "Genera la KEY en el BOT-GEN @ModV6Bot 🤖"
-    echo -e "Contacto: @PandaHL001 📱"
+    echo -e "Contacto: @MgScript 📱"
     echo -e "\n==================================================\n"
     ' > /bin/adm
     rm -f /etc/folteto
@@ -376,7 +376,7 @@ function chekKEY {
     MENSAJE+=" HORA : $(printf '%(%D-%H:%M:%S)T')\n"
     MENSAJE+=" \n"
     MENSAJE+="       ${rUlq} Bot generador de key ${rUlq}\n"
-    MENSAJE+="           ${pUn5A} By @PandaHL001 ${pUn5A} \n"
+    MENSAJE+="           ${pUn5A} By @Mgscript ${pUn5A} \n"
     MENSAJE+=" \n"  
     curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null  
     exit
@@ -768,7 +768,7 @@ echo -e "$ban_message"
 echo -e "\n\033[1;33mNo se preocupe, los datos de los usuarios NO se borran💡"
 echo -e "Instala nuevamente la script con una nueva KEY 🔑"
 echo -e "Genera la KEY en el BOT-GEN @ModV6Bot 🤖"
-echo -e "Contacto: @PandaHL001 📱"
+echo -e "Contacto: @Mgscript 📱"
 echo -e "\n==================================================\n"
 EOF
             }
@@ -1839,7 +1839,7 @@ instala_clash () {
 	while :
 	do
 		clear
-[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS  ${TTfin}      "
+[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS  ${TTfin}      "
 echo -e "\033[1;37m    【   ★ Reseller :$(cat < _credito) - ADM 2021 ★      】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m #######################################\033[1;33m"
 echo -e "\033[1;37mSeleccione una opcion :    Para Salir Ctrl + C\033[1;33m"
@@ -2022,7 +2022,7 @@ return
 ;;
 2)
 echo ""
-echo -e  "               Creditos a @PandaHL001 "
+echo -e  "               Creditos a @MgScript "
 msg -bar
 read -p " Presiona Enter para continuar "
 source <(curl -sSL https://raw.githubusercontent.com/karl1999x/PandaScript/main/SCRIPTS/zerossl.sh)
@@ -2049,7 +2049,7 @@ esac
 unset lang
 figlet " SSL / TLS " | boxes -d stone -p a2v1
 msg -bar 
-echo -e "${cor[2]} Certificado SSL/TLS ( Default: @PandaHL001 ) " 
+echo -e "${cor[2]} Certificado SSL/TLS ( Default: @MgScript ) " 
 msg -bar
 echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m Crear Su Certificado SSL  \033[0;32m(#OFICIAL)" 
 echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m Certificado AUTOMATICO    \033[0;32m(#OFICIAL)"
@@ -2107,7 +2107,7 @@ msg -bar
 fun_bar "apt install stunnel4 -y"
 echo -e "cert = /etc/stunnel/stunnel.pem\nclient = no\nsocket = a:SO_REUSEADDR=1\nsocket = l:TCP_NODELAY=1\nsocket = r:TCP_NODELAY=1\n\n[stunnel]\nconnect = 127.0.0.1:${DPORT}\naccept = ${SSLPORT}" > /etc/stunnel/stunnel.conf
 openssl genrsa -out key.pem 2048 > /dev/null 2>&1
-(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')" ; echo "" ; echo "$(wget -qO- ifconfig.me):81" ; echo "" ; echo "" ; echo "" ; echo "@PandaHL001")|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
+(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')" ; echo "" ; echo "$(wget -qO- ifconfig.me):81" ; echo "" ; echo "" ; echo "" ; echo "@MgScript")|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
 cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 service stunnel4 restart > /dev/null 2>&1
@@ -2258,7 +2258,7 @@ return
 ;;
 5)
 echo ""
-echo -e  "               Creditos a @PandaHL001 "
+echo -e  "               Creditos a @MgScript "
 msg -bar
 read -p " Presiona Enter para continuar "
 source <(curl -sSL https://raw.githubusercontent.com/karl1999x/PandaScript/main/SCRIPTS/zerossl.sh)
@@ -2316,7 +2316,7 @@ function inst_stunnel5() {
 	echo -e "\e[1DOk"
 }
 autoop() {
-  [[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS ${TTfin}      \033[0m"
+  [[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS ${TTfin}      \033[0m"
   echo -e "\033[1;37m  ${RRini} Reseller : $(cat /bin/ejecutar/menu_credito) 2022 ${RRfin}\033[0m"
   msg -bar1
   echo -e "${cor[2]} \033[1;32mESTA FUNCION AGREGARA EN EL CRONTAB UN AUTOEJECUCION"
@@ -2340,7 +2340,7 @@ autoop() {
       ;;
     1)
       clear
-      [[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS ${TTfin}      \033[0m"
+      [[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS ${TTfin}      \033[0m"
       echo -e "\033[1;37m  ${RRini} Reseller : $(cat /bin/ejecutar/menu_credito) 2022 ${RRfin}\033[0m"
       echo "Deshabilitando Servicios de AutOptimizacion"
       sed -i "/ejecutar/d" /etc/crontab
@@ -2389,7 +2389,7 @@ autoop() {
 
 cambiopass () {
 clear&&clear
-[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS ${TTfin}      \033[0m"
+[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS ${TTfin}      \033[0m"
 echo -e "\033[1;37m  ${RRini} Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ${RRfin}\033[0m"
 msg -bar1 
 echo -e ""
@@ -2496,7 +2496,7 @@ fixssh() {
 
 mtraff(){
     clear
-[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS ${TTfin}      \033[0m"
+[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS ${TTfin}      \033[0m"
 msg -bar1 
 echo -e "${cor[2]}  ⇜ Comsumo de INTERNET TOTAL EN VPS ⇝ ⇅"
 down=($(ifconfig $(ip route | grep default | awk '{print $5}') | grep -o "(.*)" ))
@@ -2670,7 +2670,7 @@ esac
 unset lang
 figlet " STUNNEL5 " | boxes -d stone -p a2v1
 msg -bar 
-echo -e "${cor[2]} Certificado SSL/TLS ( Default: @PandaHL001 ) " 
+echo -e "${cor[2]} Certificado SSL/TLS ( Default: @MgScript ) " 
 msg -bar
 echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m Certificado AUTOMATICO    \033[0;32m(#OFICIAL)"
 echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m Certificado con DOMINIO   \033[0;32m(#OFICIAL)"
@@ -2729,7 +2729,7 @@ cert = /usr/local/etc/stunnel/stunnel.cert
 key = /usr/local/etc/stunnel/stunnel.key
 " > /usr/local/etc/stunnel/stunnel.conf
 openssl genrsa -out key.pem 2048 > /dev/null 2>&1
-(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')" ; echo "" ; echo "$(wget -qO- ifconfig.me):81" ; echo "" ; echo "" ; echo "" ; echo "@PandaHL001")|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
+(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')" ; echo "" ; echo "$(wget -qO- ifconfig.me):81" ; echo "" ; echo "" ; echo "" ; echo "@MgScript")|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
 [[ -d /usr/local/etc/stunnel ]] && cat cert.pem > /usr/local/etc/stunnel/stunnel.cert
 [[ -d /usr/local/etc/stunnel ]] && cat key.pem > /usr/local/etc/stunnel/stunnel.key
 [[ -e /usr/local/share/doc/stunnel/examples/stunnel.init ]] && cp /usr/local/share/doc/stunnel/examples/stunnel.init /etc/init.d/stunnel5
@@ -2979,7 +2979,7 @@ read -p " Escoje : " ppp
 case $ppp in
 	1)
 		clear
-		[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @PandaHL001${TTcent}VPS ${TTfin}      \033[0m"
+		[[ -e /etc/adm-lite/name ]] && figlet -p -f smslant < /etc/adm-lite/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New @MgScript${TTcent}VPS ${TTfin}      \033[0m"
 		echo -e "\033[1;37m  ${RRini} Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ${RRfin}\033[0m"
 		msg -bar3 
 		echo -e "
@@ -3265,7 +3265,7 @@ x-ui enable > /dev/null 2>&1
 [[ ! -d /etc/x-ui ]] && mkdir /etc/x-ui
 [[ -d /etc/x-ui ]] && cd /etc/x-ui
 openssl genrsa -out key.key 2048 > /dev/null 2>&1
-(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')"; echo ""; echo "$(wget -qO- ifconfig.me):81"; echo ""; echo ""; echo ""; echo "@PandaHL001")|openssl req -new -x509 -key /etc/x-ui/cert.key -out /etc/x-ui/cert.crt -days 1095 > /dev/null 2>&1
+(echo "$(curl -sSL ipinfo.io > info && cat info | grep country | awk '{print $2}' | sed -e 's/[^a-z0-9 -]//ig')"; echo ""; echo "$(wget -qO- ifconfig.me):81"; echo ""; echo ""; echo ""; echo "@MgScript")|openssl req -new -x509 -key /etc/x-ui/cert.key -out /etc/x-ui/cert.crt -days 1095 > /dev/null 2>&1
 cd $HOME
 fun_bar
 echo -e "CERTIFICADO GENERADO"
